@@ -23,14 +23,28 @@
     
 }
 
-- (void)createEntry:(Entry *)entry {
-    
-    [_entries addObject: entry];
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _entries = [NSMutableArray new];
+    }
+    return self;
+}
+
+- (void)createEntry:(NSString *)title body:(NSString *)bodyText {
+    Entry *newEntry = [[Entry alloc] initWithTitle:title bodyText:bodyText];
+    [_entries addObject:newEntry];
     
 }
 
 - (void)removeEntry:(Entry *)entry {
     [_entries removeObject:entry];
+}
+
+-(void)updateEntry:(Entry *)entry title:(NSString *)title body:(NSString *)bodyText {
+    entry.title = title;
+    entry.bodyText = bodyText;
 }
 
 @end

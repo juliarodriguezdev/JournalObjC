@@ -57,7 +57,7 @@
             </objects>
             <point key="canvasLocation" x="942.02898550724649" y="87.723214285714278"/>
         </scene>
-        <!--Title-->
+        <!--Journal Entry-->
         <scene sceneID="V65-1A-n8E">
             <objects>
                 <viewController id="MjK-qo-U6k" customClass="EntryDetailViewController" sceneMemberID="viewController">
@@ -105,7 +105,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mps-w9-R3N"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="rWQ-67-F18">
+                    <navigationItem key="navigationItem" title="Journal Entry" id="rWQ-67-F18">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="5ZR-Eh-JmE">
                             <connections>
                                 <action selector="saveButtonTapped:" destination="MjK-qo-U6k" id="fBr-VM-d7i"/>
